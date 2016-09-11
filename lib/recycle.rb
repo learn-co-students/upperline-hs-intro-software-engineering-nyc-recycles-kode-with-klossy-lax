@@ -55,7 +55,7 @@ puts borough(second_recycle_bin)
 #You should use the `each_key` method to iterate over your hash and print out each key.
 def all_keys(hash)
   hash.each_key do |key|
-    puts key.gsub("_"," ")
+    puts key
   end
 end
 puts all_keys(third_recycle_bin)
@@ -73,7 +73,7 @@ puts all_data(fourth_recycle_bin)
 #You should use the `each` method to iterate over your hash to print out that sentence
 def key_and_data(hash)
   hash.each do |key, value|
-    puts "the #{key.gsub("_"," ")} is #{value}"
+    puts "The #{key} is #{value}"
   end
 end
-puts key_and_data(first_recycle_bin)
+puts key_and_data(fourth_recycle_bin)
